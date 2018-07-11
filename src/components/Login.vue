@@ -53,6 +53,7 @@ export default {
       })
         .then(result => {
           this.response = result.data
+          this.sid = this.response.sid
         },
         error => {
           console.error(error)
